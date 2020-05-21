@@ -23,7 +23,7 @@
 - 1、composer 安装
 
 ```shell
-composer require dcat-admin-extensions/loginCaptcha
+composer require sonhineboy/dcatadminlogincaptcha
 ```
 
 
