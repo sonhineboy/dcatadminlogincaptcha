@@ -49,6 +49,6 @@ composer require dcat-admin-extensions/loginCaptcha
 
 - 3、效果
 
-  ![](./1png)
+  ![](https://github.com/sonhineboy/dcatadminlogincaptcha/blob/master/2.png)
 
   
