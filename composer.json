@@ -1,0 +1,29 @@
+{
+	"name" : "dcat-admin-extensions/loginCaptcha",
+	"description" : "dcat-admin plugins loginCaptcha.",
+	"type" : "library",
+	"keywords" : [
+		"dcat-admin plugins",
+		"loginCaptcha"
+	],
+	"homepage" : "https://github.com/dcat-admin-extensions/loginCatcha",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "kevin.wang",
+			"email" : "172205267@qq.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.1.0",
+		"dcat/laravel-admin" : "*",
+		"guzzlehttp/guzzle" : "~6.5"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Dcat\\Admin\\Extension\\LoginCaptcha\\" : "src/"
+		},
+		"files" : [
+			"src/bootstrap.php"
+		]
+	}
+}
