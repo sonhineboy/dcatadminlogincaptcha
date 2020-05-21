@@ -4,7 +4,7 @@
 
 - 登录限流
 
-  - 登录次数显示（可配置）
+  - 登录次数（可配置）
   - 如果超出登录次数间隔限制（可配置）
 
 - 验证码功能
@@ -36,7 +36,7 @@ composer require sonhineboy/dcatadminlogincaptcha
         'enable' => true, //是否开启
         'config' => [
             'v5' =>[ //key不允许改变
-                'enable' => true,//是否开始
+                'enable' => true,//是否开启
                 'host'  => '...', 
                 'token' => '...',
                 'app_id'=> '...',
