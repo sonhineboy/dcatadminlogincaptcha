@@ -51,4 +51,5 @@ composer require dcat-admin-extensions/loginCaptcha
 
   ![](https://github.com/sonhineboy/dcatadminlogincaptcha/blob/master/2.png)
 
+  |[](https://github.com/sonhineboy/dcatadminlogincaptcha/blob/master/2.png)
   
