@@ -1,12 +1,12 @@
 {
-	"name" : "dcat-admin-extensions/loginCaptcha",
+	"name" : "sonhineboy/dcatadminlogincaptcha",
 	"description" : "dcat-admin plugins loginCaptcha.",
 	"type" : "library",
 	"keywords" : [
 		"dcat-admin plugins",
 		"loginCaptcha"
 	],
-	"homepage" : "https://github.com/dcat-admin-extensions/loginCatcha",
+	"homepage" : "https://github.com/sonhineboy/dcatadminlogincaptcha",
 	"license" : "MIT",
 	"authors" : [{
 			"name" : "kevin.wang",
