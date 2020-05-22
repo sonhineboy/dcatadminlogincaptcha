@@ -39,6 +39,8 @@ composer require sonhineboy/dcatadminlogincaptcha
 ```php
 'login-captcha' => [
         'enable' => true, //是否开启
+    	'maxAttempts'=>10 ,//密码错误尝试次数
+    	'decayMinutes'=>10 , //超过尝试次数后间隔时间
         'config' => [
             'v5' =>[ //key不允许改变
                 'enable' => true,//是否开启
