@@ -18,6 +18,12 @@ Trait CaptchaValidate{
         return $this->captchaValidateVerify5(request('captcha_token'),$value) === true;
     }
 
+    
+    /**
+     * getV5token
+     * 
+     * @return string|mixed
+     */
     public function getVerify5Token()
     {
         
@@ -78,6 +84,12 @@ Trait CaptchaValidate{
         return true;
     }
 
+    
+    /**
+     * 初始化 httpCline
+     * 
+     * @return \GuzzleHttp\Client
+     */
     public function httpClien()
     {
         return new Client([
