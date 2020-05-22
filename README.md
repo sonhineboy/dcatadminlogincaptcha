@@ -15,8 +15,13 @@
 
 
 
-
 如果喜欢请 猛击star
+
+## 依赖
+
+- "php" : ">=7.1.0",
+- "dcat/laravel-admin" : "*",
+- "guzzlehttp/guzzle" : "~6.5"
 
 ## 使用方法:crossed_fingers:
 
