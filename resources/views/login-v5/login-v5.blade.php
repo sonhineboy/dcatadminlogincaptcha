@@ -16,11 +16,7 @@ Dcat.loginFormBefore=function(fields, form, opt){
 }
 
 Dcat.loginFormErrors=function(re){
-
-	console.log("---")
-	$.get('{{admin_url('auth/login')}}',function(data){
-		console.log(data);
-	})
+	
 }
 
 $("#captcha").on("click",'div',function(){
