@@ -61,6 +61,16 @@ class AuthController extends Controller
         $credentials = $request->only([$this->username(), 'password']);
         $remember = (bool) $request->input('remember', false);
         
+        /** @var \Illuminate\Validation\Validator $validator */
+        $validator = Validator::make(array_merge($credentials,[$this->getcaptchaName()=>$request->post($this->getcaptchaName())]), [
+            $this->username()        =>  'required',
+            'password'               =>  'required',
+            $this->getcaptchaName()  =>  'required|kcaptcha'
+        ]);
+        
+        if ($validator->fails()) {
+            return $this->validationErrorsResponse($validator);
+        }
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
         // the login attempts for this application. We'll key this by the username and
         // the IP address of the client making these requests into this application.
@@ -73,16 +83,6 @@ class AuthController extends Controller
         
         if ($this->guard()->attempt($credentials, $remember)) {
             
-            /** @var \Illuminate\Validation\Validator $validator */
-            $validator = Validator::make(array_merge($credentials,[$this->getcaptchaName()=>$request->post($this->getcaptchaName())]), [
-                $this->username()        =>  'required',
-                'password'               =>  'required',
-                $this->getcaptchaName()  =>  'required|kcaptcha'
-            ]);
-            
-            if ($validator->fails()) {
-                return $this->validationErrorsResponse($validator);
-            }
             
             
             return $this->sendLoginResponse($request);
